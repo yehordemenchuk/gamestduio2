@@ -21,23 +21,23 @@ React-версия фронтенда для игры TapTile под ваш Spri
 
 По умолчанию используется:
 
-- `VITE_API_BASE_URL=http://51.21.196.61:8080/api/v1`
+- `VITE_API_BASE_URL=http://13.60.221.232:8080/api/v1`
 
 ## Docker
 
 ### Запуск через Docker Compose
 
 1. (Опционально) задайте API URL для сборки:
-   - `set VITE_API_BASE_URL=http://51.21.196.61:8080/api/v1`
+   - `set VITE_API_BASE_URL=http://13.60.221.232:8080/api/v1`
 2. Соберите и запустите контейнер:
    - `docker compose up --build`
 3. Откройте приложение:
-   - `http://51.21.196.61:5173`
+   - `http://13.60.221.232:5173`
 
 ### Запуск через Dockerfile
 
 1. Соберите образ:
-   - `docker build -t taptile-frontend --build-arg VITE_API_BASE_URL=http://51.21.196.61:8080/api/v1 .`
+   - `docker build -t taptile-frontend --build-arg VITE_API_BASE_URL=http://13.60.221.232:8080/api/v1 .`
 2. Запустите контейнер:
    - `docker run --rm -p 5173:80 taptile-frontend`
 
