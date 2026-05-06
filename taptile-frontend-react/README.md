@@ -41,6 +41,8 @@ React-версия фронтенда для игры TapTile под ваш Spri
 2. Запустите контейнер:
    - `docker run --rm -p 5173:80 taptile-frontend`
 
+**Сервер по IP:** при сборке укажите публичный URL API, иначе в браузере останется `localhost` и будет `Failed to fetch`. Пример: `--build-arg VITE_API_BASE_URL=http://13.60.221.232:8080/api/v1`. На бэкенде добавьте тот же origin фронта в CORS (см. корневой `docker-compose` и `APP_CORS_ALLOWED_ORIGINS`).
+
 ## Нужен ли CORS?
 
 Да, если фронт и бэк на разных origin.
