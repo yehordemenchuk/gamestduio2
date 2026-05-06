@@ -1,2 +1,2 @@
 export const API_BASE_URL =
-  import.meta.env.VITE_API_BASE_URL || "http://16.171.40.150:8080/api/v1";
+  import.meta.env.VITE_API_BASE_URL || "http://51.21.196.61:8080/api/v1";
