@@ -1,6 +1,9 @@
 import bcrypt from "bcryptjs";
 
 async function sha256Hex(plain) {
+  if (!globalThis.crypto?.subtle) {
+    throw new Error("Secure context required: open app via HTTPS or localhost.");
+  }
   const data = new TextEncoder().encode(plain);
   const digest = await crypto.subtle.digest("SHA-256", data);
   return Array.from(new Uint8Array(digest))
