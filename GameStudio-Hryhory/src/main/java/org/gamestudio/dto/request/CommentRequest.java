@@ -8,5 +8,5 @@ import java.util.Date;
 public record CommentRequest(@NotEmpty String game,
                              @NotEmpty String player,
                              @NotEmpty String comment,
-                             @PastOrPresent Date datedOn) {
+                             @NotEmpty Date datedOn) {
 }
