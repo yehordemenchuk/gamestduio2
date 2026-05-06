@@ -9,5 +9,5 @@ import java.util.Date;
 public record ScoreRequest(@NotEmpty String game,
                            @NotEmpty String player,
                            @PositiveOrZero Integer points,
-                           @NotEmpty Date playedOn) {
+                           Date playedOn) {
 }
